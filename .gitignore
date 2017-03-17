@@ -261,9 +261,8 @@ __pycache__/
 *.pyc
 
 # Custom
-src/app/*.js.map
-src/app/*.js
-src/main.js.map
-src/main.js.map
-server.js
-*.js
+**/src/app/*.js.map
+**/src/app/*.js
+**/src/main.js.map
+**/src/main.js
+**/server.js
