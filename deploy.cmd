@@ -88,6 +88,11 @@ goto :EOF
 :Deployment
 echo Handling node.js deployment.
 
+:: 0. Get only the node app
+IF DEFINED DEPLOYMENT_SOURCE (
+  Set DEPLOYMENT_SOURCE = "%DEPLOYMENT_SOURCE%\heroesFrontEnd\src"
+)
+
 echo "%DEPLOYMENT_SOURCE%"
 echo "%DEPLOYMENT_TARGET%"
 
