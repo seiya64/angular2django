@@ -39,7 +39,7 @@
     <Content Include="src\tsconfig.json">
       <SubType>Code</SubType>
     </Content>
-    <TypeScriptCompile Include="Scripts2\typings\node\node.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\node\node.d.ts" />
     <TypeScriptCompile Include="server.ts" />
     <Content Include="src\index.html">
       <SubType>Code</SubType>
@@ -58,9 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\" />
-    <Folder Include="Scripts2\" />
-    <Folder Include="Scripts2\typings\" />
-    <Folder Include="Scripts2\typings\node\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Scripts\typings\" />
+    <Folder Include="Scripts\typings\node\" />
     <Folder Include="src\app\" />
   </ItemGroup>
   <ItemGroup>
