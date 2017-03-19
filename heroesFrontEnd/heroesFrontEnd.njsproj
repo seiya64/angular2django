@@ -45,6 +45,9 @@
     <Content Include="src\tsconfig.json">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="web.config">
+      <SubType>Code</SubType>
+    </Content>
     <TypeScriptCompile Include="Scripts\typings\node\node.d.ts" />
     <TypeScriptCompile Include="server.ts" />
     <Content Include="src\index.html">
