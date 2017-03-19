@@ -32,6 +32,9 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="index.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="src\styles.css">
       <SubType>Code</SubType>
     </Content>
