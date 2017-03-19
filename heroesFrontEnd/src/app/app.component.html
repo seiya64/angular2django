@@ -5,7 +5,7 @@
         <md-list-item>
             <md-list-item *ngFor="let beacon of fort.beacons">
                 <span>
-                    <md-icon md-list-avatar [style.color]="beacon.isBurning ? 'red' : ''">whatshot</md-icon>
+                    <md-icon md-list-avatar (click)="toggleBeacon(beacon)" [style.color]="beacon.isBurning ? 'red' : ''">whatshot</md-icon>
                     {{beacon.name}}
                 </span>
             </md-list-item>

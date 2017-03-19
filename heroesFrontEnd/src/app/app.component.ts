@@ -44,4 +44,7 @@ export class AppComponent {
             beacons: BEACONS
         }
     ];
+    toggleBeacon(beacon: Beacon): void {
+        beacon.isBurning = !beacon.isBurning;
+    };
 }
