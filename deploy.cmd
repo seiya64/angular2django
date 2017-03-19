@@ -105,11 +105,14 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   popd
 )
 
-:: 4\. Compile TypeScript
+:: 4. Activate Angular production mode
+echo Activate Angular production mode
+call :ExecuteCmd copy %DEPLOYMENT_TARGET%\src\mainprod.ts %DEPLOYMENT_TARGET%\src\main.ts
+
+:: 5. Compile TypeScript
 echo Transpiling TypeScript in %DEPLOYMENT_TARGET%...
 call :ExecuteCmd node %DEPLOYMENT_TARGET%\node_modules\typescript\bin\tsc -p "%DEPLOYMENT_TARGET%"
 call :ExecuteCmd node %DEPLOYMENT_TARGET%\node_modules\typescript\bin\tsc -p "%DEPLOYMENT_TARGET%\src"
-
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 goto end
