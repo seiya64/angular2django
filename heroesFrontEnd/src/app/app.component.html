@@ -1,0 +1,14 @@
+﻿<md-toolbar><h1>{{title}}</h1></md-toolbar>
+<md-card *ngFor="let fort of forts">
+    <md-list>
+        <h2>Almenaras de {{fort.name}}:</h2>
+        <md-list-item>
+            <md-list-item *ngFor="let beacon of fort.beacons">
+                <span>
+                    <md-icon md-list-avatar [style.color]="beacon.isBurning ? 'red' : ''">whatshot</md-icon>
+                    {{beacon.name}}
+                </span>
+            </md-list-item>
+        </md-list-item>
+    </md-list>
+</md-card>

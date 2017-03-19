@@ -38,9 +38,10 @@
     <Content Include="src\app\index.html">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="src\styles.css">
+    <Content Include="src\app\app.component.html">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="src\styles.css" />
     <Content Include="tsconfig.json" />
     <Content Include="src\tsconfig.json">
       <SubType>Code</SubType>
