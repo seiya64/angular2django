@@ -1,16 +1,7 @@
 ﻿import { Component } from '@angular/core';
 
-export class Fort {
-    id: number;
-    name: string;
-    beacons: Array<Beacon>;
-}
-
-export class Beacon {
-    id: number;
-    name: string;
-    isBurning: boolean;
-}
+import { Beacon } from './models/beacon';
+import { Fort } from './models/fort';
 
 const BEACONS: Beacon[] = [
     {
@@ -44,7 +35,4 @@ export class AppComponent {
             beacons: BEACONS
         }
     ];
-    toggleBeacon(beacon: Beacon): void {
-        beacon.isBurning = !beacon.isBurning;
-    };
 }
