@@ -1,6 +1,7 @@
 ﻿import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MaterialModule } from '@angular/material';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppComponent } from './app.component';
 import { AppRouting } from './app.routing';
@@ -12,7 +13,8 @@ import { LoginComponent } from './Login/login.component';
     imports: [
         BrowserModule,
         MaterialModule,
-        AppRouting
+        AppRouting,
+        FlexLayoutModule
     ],
 
     declarations: [
