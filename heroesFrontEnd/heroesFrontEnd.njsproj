@@ -35,6 +35,8 @@
     <Content Include="index.html">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="src\app\Login\login.component.css" />
+    <Content Include="src\app\Login\login.component.html" />
     <Content Include="src\app\Fort\fort.component.html">
       <SubType>Code</SubType>
     </Content>
@@ -65,6 +67,10 @@
     <TypeScriptCompile Include="src\app\app.module.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\app.routing.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\Login\login.component.ts" />
     <TypeScriptCompile Include="src\app\Fort\fort.component.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
@@ -87,6 +93,7 @@
     <Folder Include="Scripts\typings\" />
     <Folder Include="Scripts\typings\node\" />
     <Folder Include="src\app\" />
+    <Folder Include="src\app\Login\" />
     <Folder Include="src\app\Fort\" />
     <Folder Include="src\app\models\" />
   </ItemGroup>
