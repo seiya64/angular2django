@@ -13,6 +13,10 @@ app.get('/', function (req, res) {
     res.sendFile(path.join(__projectRoot + '/index.html'));
 });
 
+app.get('/*', function (req, res) {
+    res.redirect('/');
+});
+
 app.listen(port, function () {
     console.log('Server up and running on http://localhost:' + port + '/');
 });
