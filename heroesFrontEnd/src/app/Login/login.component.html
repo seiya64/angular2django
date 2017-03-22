@@ -1,11 +1,16 @@
 ﻿<md-card>
     <form>
-        <md-input-container class="login-input-container">
-            <input mdInput placeholder="Email" type="email">
-        </md-input-container>
-        <md-input-container class="login-input-container">
-            <input mdInput placeholder="Password" type="password">
-        </md-input-container>
+        <div fxLayout="column">
+            <md-input-container fxflex>
+                <input mdInput placeholder="Email" type="email">
+            </md-input-container>
+            <md-input-container fxflex>
+                <input mdInput placeholder="Password" type="password">
+            </md-input-container>
+        </div>
     </form>
-    <a md-raised-button routerLink="/fort">Login</a>
+    <div fxLayout="row" fxLayoutGap="10px">
+        <a md-raised-button routerLink="/fort" fxflex>Login</a>
+        <a md-raised-button routerLink="/fort" fxflex>Registrar</a>
+    </div>
 </md-card>
